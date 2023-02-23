@@ -3,43 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Dumbways - Day 2</title>
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
-    
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+  
     
   </head>
-  <body style="background-color: lightgray;width: 100%;margin:0;padding: 0;height: 100%;">
+  <body>
      <!-- Navbar -->
-    <nav style="width:100%;background-color: #26d0c9;margin: 0;padding: 0;display: inline-block;">
-    <div class="header">
-    <div class="header-logo"><img src="assets/images/Dumbways.png" width="90"></div>
-    <div class="header-list">
+
+    <nav>
+      <div class="left-side">
+        <a href="index.html">
+          <img src="assets/images/Dumbways.png" alt="Dumbways" style="width: 40px" />
+        </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://github.com/opvinz?tab=repositories">My Project</a></li>
-          <li><button onclick="document.location='contact_form.html'" style="position: absolute;right: 30px;">Contact Me</button></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="myproject.html" class="list-active">My Project</a>
+          </li>
         </ul>
       </div>
-    </div>
+      <div class="right-side">
+        <a href="contact_form.html"> Contact Me </a>
+      </div>
     </nav>
     
 
     <!-- Contact Form -->
-    <div class="main" style="background-color:lightcoral;width:100%";>
+    <div class="main" style="background-color:white;width:100%";>
       <div class="contact-form">
         <h3 style="font-weight: bold; font-size: 45px; text-align: center; font-family:'Trebuchet MS';margin:0px;color:black;">Get In Touch</h3>
         <div style="margin:50px;">
-        <form action="https://www.facebook.com/">
             
             <label for="Name">Name:</label><br>
-           <input type="text" class="formstyle" id="Name" Name="Name"><br><br>
+           <input type="text" class="formstyle" id="name" Name="Name"><br><br>
     
             <label for="Email">Email:</label><br>
-            <input type="text" class="formstyle" id="Email" name="Email"><br><br> 
+            <input type="text" class="formstyle" id="email" name="Email"><br><br> 
     
             <label for="Phonenumber">Phone Number:</label><br>
-            <input type="number" class="formstyle" id="Phone_number" name="Phone number"><br><br>
+            <input type="number" class="formstyle" id="phone_number" name="Phone number"><br><br>
 
-            <label for="subject">subject</label><br>
+            <label for="subject">Subject:</label><br>
             <select style="width: 224px" name="subject" class="formstyle" id="subject">
               <option selected disabled></option>
               <option >Collaboration</option>
@@ -49,17 +55,16 @@
           
             
             <!-- <div style="margin:30px;"></div> -->
-            <label for="Adress">Adress:</label><br>
-            <input type="text" class="formstyle" id="Adress" name="Adress"><br><br>
+            <label for="Address">Address:</label><br>
+            <input type="text" class="formstyle" id="address" name="Address"><br><br>
             <p>Your Massage (Wajib Diisi)</p>
-            <textarea class="formstyle"></textarea>
+            <textarea id="your_massage"class="formstyle"></textarea>
             
             <br><br>
               <div style="width: 200px;">
-            <input class="contact-submit" type="submit" value="Kirim">
+          <button class="contact-submit">Kirim</button>
           </div>
           </div>
-          </form>
         </div>
       </div>
     </div>
